@@ -1,8 +1,6 @@
 Project Structure:
 # Office-Automation-System-for-Pediatric-Doctor-s-Office
 
-Brief description of the project.
-
 ## Overview
 
 Doctor's Office Automation Application for Nurse, Doctor & Patient.
