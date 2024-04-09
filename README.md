@@ -1,44 +1,4 @@
 Project Structure:
 
-th43/
-│
-├── src/
-│   ├── database/
-│   │   └── DatabaseConnector.java
-│   │
-│   ├──dao/ 
-│   │   ├── AllergyDAO.java
-│   │   ├── PatientDAO.java
-│   │   ├── PrescriptionDAO.java
-│   │   ├── VisitDAO.java
-│   │   ├── PatientDAO.java
-│   │   ├── MessageDAO.java
-│   │   └── HealthIssueDAO.java
-│   │
-│   ├── model/
-│   │   ├── Patient.java
-│   │   ├── Visit.java
-│   │   └── Prescription.java...
-│   │
-│   ├── ui/
-│   │   ├── MainApplication.java
-│   │   ├── LoginView.java
-│   │   ├── NurseDashboardView.java
-│   │   ├── DoctorDashboardView.java
-│   │   └── PatientPortalView.java
-│   │
-│   └── util/
-│       └── (Utility classes if any)
-│
-├── lib/
-│   └── sqlite-jdbc-(version).jar
-│
-├── database/
-│   └── th43.db
-│
-└── resources/
-    ├── css/
-    │   └── style.css
-    └── images/
-        └── (any project images)
+<img width="348" alt="Screenshot 2024-04-09 at 7 14 33 AM" src="https://github.com/darshchaurasia/Office-Automation-System-for-Pediatric-Doctor-s-Office/assets/43368969/6581edd6-6af3-4b48-a232-46448d67fa46">
 
