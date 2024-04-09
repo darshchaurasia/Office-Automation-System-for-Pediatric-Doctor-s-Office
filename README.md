@@ -1,4 +1,3 @@
-Project Structure:
 # Office-Automation-System-for-Pediatric-Doctor-s-Office
 
 ## Overview
