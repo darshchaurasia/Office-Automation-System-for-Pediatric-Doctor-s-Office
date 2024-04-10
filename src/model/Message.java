@@ -6,6 +6,7 @@ public class Message {
     private String messageContent;
     private String replyContent;
     private String timestamp; // Consider using LocalDateTime for date and time handling
+    
 
     // Constructor with all fields
     public Message(int messageID, int patientID, String messageContent, String replyContent, String timestamp) {
