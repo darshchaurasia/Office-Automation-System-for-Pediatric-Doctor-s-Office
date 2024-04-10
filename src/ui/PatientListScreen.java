@@ -57,8 +57,10 @@ public class PatientListScreen extends Application {
         primaryStage.setTitle("Patient List View");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
+        
+     
     }
-
     private void loadData() {
         data.clear();
         data.addAll(patientDAO.getAllPatients());
