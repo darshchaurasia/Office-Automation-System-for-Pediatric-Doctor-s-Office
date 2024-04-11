@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import util.UIHelper;
+import util.UIHelper; // using util class for handling buttons
 
 public class main extends Application {
 
@@ -17,7 +17,7 @@ public class main extends Application {
 		 VBox vbox = new VBox(10);
 	        vbox.setAlignment(Pos.CENTER);
 
-
+// declaring buttons for navigation on main dashboard
 
 	        Button NursePortal = UIHelper.createButton("Nurses Click Here");
 	        NursePortal.setOnAction(e -> openScreen(new NurseViewScreen()));
@@ -27,7 +27,8 @@ public class main extends Application {
 	        
 	        Button PatientPortal = UIHelper.createButton("Patients Click Here");
 	        PatientPortal.setOnAction(e -> openScreen(new PatientViewScreen()));
-	        
+	    
+// declaring display funcitonality for all buttons    
 	        vbox.getChildren().addAll(NursePortal, DoctorPortal, PatientPortal);
 
 	        Scene scene = new Scene(vbox, 300, 250);
