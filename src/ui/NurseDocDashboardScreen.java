@@ -8,7 +8,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import util.UIHelper;
 
-public class DashboardScreen extends Application {
+public class NurseDocDashboardScreen extends Application {
 
     @Override
     public void start(Stage primaryStage) {
