@@ -31,8 +31,12 @@ public class main extends Application {
 	        vbox.getChildren().addAll(NursePortal, DoctorPortal, PatientPortal);
 
 	        Scene scene = new Scene(vbox, 300, 250);
+	       
+	       
+	        
 	        primaryStage.setScene(scene);
 	        primaryStage.show();
+	   
 	}
 	
 	

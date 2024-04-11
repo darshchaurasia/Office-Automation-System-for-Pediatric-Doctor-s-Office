@@ -9,19 +9,19 @@ Doctor's Office Automation Application for Nurse, Doctor & Patient.
 - Java Development Kit (JDK)
 - Eclipse IDE (or any Java IDE of your choice)
 - SQLite DB Browser (for database management)
-- [sqlite-jdbc-(version).jar](lib/sqlite-jdbc-(version).jar)
+- [sqlite-jdbc-3.45.2.0.jar](lib/sqlite-jdbc-3.45.2.0.jar)
 
 ## Installation
 
 1. Clone the repository.
 2. Open Eclipse IDE.
 3. Import the project into Eclipse.
-4. Make sure to include `sqlite-jdbc-(version).jar` in the project build path.
+4. Make sure to include `sqlite-jdbc-3.45.2.0.jar`,`sIf4j-simple-2.0.12.jar` and `sif4j-api-2.0.12.jar` in the project build path.
 5. Ensure SQLite DB Browser is installed for managing the database.
 
 ## Usage
 
-1. Compile and run `MainApplication.java` to start the application.
+1. Compile and run `main.java` to start the application.
 2. Use the login interface to authenticate.
 3. Based on the role (Nurse, Doctor, or Patient), the respective dashboard or portal will be displayed.
 4. Navigate through the application using the provided UI components.
@@ -33,7 +33,7 @@ Doctor's Office Automation Application for Nurse, Doctor & Patient.
 th43/
 │
 ├── src/
-│   ├── database/
+│   ├── db/
 │   │   └── DatabaseConnector.java
 │   │
 │   ├── dao/ 
@@ -43,34 +43,52 @@ th43/
 │   │   ├── VisitDAO.java
 │   │   ├── PatientDAO.java
 │   │   ├── MessageDAO.java
-│   │   └── HealthIssueDAO.java
+│   │   ├── HealthIssueDAO.java
+│   │   └── ImmunizationDAO.java       
 │   │
 │   ├── model/
+│   │   ├── Allergy.java
 │   │   ├── Patient.java
+│   │   ├── Prescription.java
 │   │   ├── Visit.java
-│   │   └── Prescription.java...
+│   │   ├── Patient.java
+│   │   ├── Message.java
+│   │   ├── HealthIssue.java
+│   │   └── Immunization.java   
 │   │
 │   ├── ui/
-│   │   ├── MainApplication.java
-│   │   ├── LoginView.java
-│   │   ├── NurseDashboardView.java
-│   │   ├── DoctorDashboardView.java
-│   │   └── PatientPortalView.java
+│   │   ├── main.java
+│   │   ├── PatientDetailScreen.java
+│   │   ├── NurseViewScreen.java
+│   │   ├── NurseDocDashboardScreen.java
+│   │   ├── MessagesScreen.java
+│   │   ├── Health|ssueListScreen.java
+│   │   ├── AllergyEditScreen.java
+│   │   ├── Health|ssueEditScreen.java
+│   │   ├── DoctorViewScreen.java
+│   │   ├── AllergyListScreen.java
+│   │   ├── VisitListScreen.java
+│   │   ├── VisitEditScreen.java
+│   │   ├── SuccessfulLogin.java
+│   │   ├── PrescriptionListScreen.java
+│   │   ├── PrescriptionEditScreen.java
+│   │   ├── PatientViewScreen.java
+│   │   ├── PatientRegistration.java
+│   │   ├── PatientListScreen.java
+│   │   └── PatientEditScreen.java
 │   │
 │   └── util/
-│       └── (Utility classes if any)
+│       ├── module-info.java
+│       └── UlHelper.java
 │
 ├── lib/
-│   └── sqlite-jdbc-(version).jar
+│   ├── sif4j-api-2.0.12.jar
+│   ├── sIf4j-simple-2.0.12.jar
+│   └── sqlite-jdbc-3.45.2.0.jar
 │
-├── database/
-│   └── th43.db
-│
-└── resources/
-    ├── css/
-    │   └── style.css
-    └── images/
-        └── (any project images)
+└── database/
+    └── th43.db
+ 
 ```
 
 ## Database
