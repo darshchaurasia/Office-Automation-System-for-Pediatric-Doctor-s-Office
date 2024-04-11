@@ -37,6 +37,26 @@ public class PatientDAO {
         return null;
     }
 
+    public boolean existsPatientId(int patientId) {
+        String sql = "SELECT COUNT(1) FROM Patients WHERE PatientID = ?";
+
+        try (Connection conn = DatabaseConnector.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            
+            pstmt.setInt(1, patientId);
+            ResultSet rs = pstmt.executeQuery();
+            
+            // If the count is greater than 0, the patient ID exists
+            if (rs.next()) {
+                return rs.getInt(1) > 0;
+            }
+        } catch (SQLException e) {
+            System.out.println("Database error: " + e.getMessage());
+        }
+        return false;
+    }
+
+    
     public List<Patient> getAllPatients() {
         List<Patient> patients = new ArrayList<>();
         String sql = "SELECT * FROM Patients";

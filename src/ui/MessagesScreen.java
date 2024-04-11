@@ -15,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 public class MessagesScreen extends Application {
-
+	
     private ListView<Message> messagesListView = new ListView<>();
     private MessageDAO messageDAO = new MessageDAO();
 
